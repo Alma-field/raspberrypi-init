@@ -11,7 +11,8 @@ country=JP
 
 network = {
     ssid="{{ wifi.ssid }}"
-    psk={{ wifi.passphrase }}
+    psk="{{ wifi.password }}"
+    key_mgmt=WPA-PSK
 }\n\n'''
 
 def wpa_psk(ssid, password):
